@@ -186,8 +186,6 @@ function heartThis() {
     heartDiv.style.display = 'none';
     playDiv.style.display = 'block';
     document.body.style.color = 'white';
-    // intervalBdIn = setInterval(revealBackdrop, 250);
-    // canvas.style.backgroundImage = `url(${ambiance.img})`;
     granimInstance.changeState(randomSound);
     heartBtn.classList.toggle('fill');
   } else {
@@ -195,7 +193,6 @@ function heartThis() {
     heartDiv.classList.add('active');
     heartDiv.style.display = 'block';
     playDiv.style.display = 'none';
-    // hideBackdrop();
     granimInstance.changeState('heart-state');
     heartBtn.classList.toggle('fill');
     document.body.style.color = 'darkslategrey';

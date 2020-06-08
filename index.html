@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noise</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ae7f7675ff.js"></script>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body onload="main()">
+  <div id="header-div">
+    <span id="heart-span" class="fa-stack">
+      <i onclick="heartThis()" class="fa fa-stack-1x fa-heart button" id="heart-btn" aria-hidden="true"></i>
+    </span>
+
+    <span id="mute-span" class="fa-stack">
+      <i id="mute-btn" onclick="toggleMute()" class="fa fa-stack-1x fa-volume-up button" aria-hidden="true"></i>
+    </span>
+  </div>
+
+  <div id="heart-div">
+    <p>Background noise to drown out the world. Create an environment for work or play.</p>
+    <br>
+    <p>Audio tracks licensed under Creative Commons from <a href="https://freesound.org">freesound.org</a>. Images from
+      <a href="https://picsum.photos">Lorem Picsum</a>, Creative Commons license. Gradient animation courtesy of <a
+        href="https://sarcadass.github.io/granim.js">Granim.js</a>, licensed under MIT.</p>
+    <br>
+    <h6><b>Share the ❤️</b></h6>
+    <div id="social-div">
+      <iframe
+        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fafaintnoise.com&layout=button&size=large&mobile_iframe=true&width=72&height=28&appId"
+        width="72" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+        allowTransparency="true"></iframe>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
+  <div id="title-wrapper">
+    <h1 id="titleHeader">Noise</h1>
+    <p id="subtitle">
+      <span>Background noise to drown out the world</span>
+      <br>
+      <br>
+      <span>Press play</span>
+    </p>
+  </div>
+
+  <div id="play-wrapper">
+    <i id="play-btn" onclick="togglePlay()" class="fa fa-play button active" aria-hidden="true"></i>
+    <audio id="noisePlayer" loop="true"></audio>
+  </div>
+
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- <script src="scripts/sine-wave.js"></script> -->
+  <script src="scripts/granim.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
